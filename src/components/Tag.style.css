@@ -1,0 +1,46 @@
+/* Conteneur principal des tags */
+.tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin: 20px 0;
+  justify-content: center;
+}
+
+/* Conteneur individuel pour chaque tag */
+.tag-container {
+  display: inline-block;
+}
+
+/* Style général du tag */
+.tag {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 12px;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: bold;
+  border-radius: 15px;
+  border: 1px solid transparent; /* Pas de bordure par défaut */
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+/* Effet hover pour le tag */
+.tag:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Texte du tag */
+.tag-text {
+  line-height: 1;
+}
+
+/* Adaptation responsive */
+@media (max-width: 600px) {
+  .tag {
+    font-size: 12px;
+    padding: 4px 8px;
+  }
+}

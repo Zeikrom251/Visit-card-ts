@@ -1,0 +1,13 @@
+.profile-photo {
+  position: relative;
+  margin: -55px auto 0;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+.profile-photo img {
+  width: 100%;
+}

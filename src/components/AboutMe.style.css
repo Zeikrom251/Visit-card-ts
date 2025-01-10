@@ -1,0 +1,33 @@
+.about-me {
+  text-align: left;
+  font-size: 0.95rem;
+  padding: 8px 20px 8px 20px;
+  margin-top: 10px;
+  border-radius: 10px;
+  background: #eeeff0;
+  line-height: 1.5;
+  color: #444;
+}
+
+.about-me h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin: 10px 0 1.2rem 0;
+  text-align: center;
+}
+
+.about-me p {
+  font-size: 1rem;
+  color: #555;
+  line-height: 1.5;
+  text-align: center;
+}
+
+.about-me a {
+  color: #2575fc;
+  text-decoration: none;
+}
+
+.about-me a:hover {
+  text-decoration: underline;
+}
