@@ -1,50 +1,93 @@
-# React + TypeScript + Vite
+# Digital Business Card 💳
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project is a **digital business card** built with **React, Typescript**, and configured using **Vite**. It is a responsive web application that displays personal information, social media links, and a button to add the contact directly.
 
-Currently, two official plugins are available:
+## ✨ Features
+- **Card Display :**
+    - Profile picture
+    - Custom banner
+    - Name and professional title
+    - **`About Me`** Section
+- **Dynamic Social Links :**
+    - Retrieved from **`../src/data/SocialLinks.json`** file
+    - Each link has a unique color
+- **"Add To Contact" Button :**
+    - Generates a `.vcf` file for easy contact import
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 💻 Tech Stack 
+- **React** with functional components
+- **Typescript** for strict typing
+- **Vite** for fast setup and efficient development
+- **CSS Modules** for scoped styling
 
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
+---
 
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default tseslint.config({
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+## 📂 Project Structure
+```plaintext
+Visit-card-ts/
+├── public/          # Images used in the project
+├── src/             # all source code here
+|  ├── assets/       # additionnal files
+|  ├── components/   # all components created to form the visit-card
+|  ├── data/         # .json files stored here
 ```
 
-- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
-- Optionally add `...tseslint.configs.stylisticTypeChecked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
+---
 
-```js
-// eslint.config.js
-import react from 'eslint-plugin-react'
+## 📥 Installation
+**1. Clone the repository :**
+```bash
+git clone https://github.com/your-username/your-repo.git
+cd your-repo
+``` 
 
-export default tseslint.config({
-  // Set the react version
-  settings: { react: { version: '18.3' } },
-  plugins: {
-    // Add the react plugin
-    react,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended rules
-    ...react.configs.recommended.rules,
-    ...react.configs['jsx-runtime'].rules,
-  },
-})
+**2. Install dependencies :**
+```bash
+npm install
 ```
+
+**3. Run the project locally :**
+```bash
+npm run dev
+```
+
+**4. Build for production :**
+```bash
+npm run build
+```
+
+---
+
+## 📤 Deployment
+This project can be deployed on Github Pages or platforms like Vercel and Netlify.
+
+### Deploying to Github Pages :
+  **1.** Install `gh-pages` :
+  ```bash
+npm install gh-pages --save-dev
+  ```
+
+  **2.** Add the following script to your `package.json` :
+  ```json
+"scripts": {
+  "deploy": "vite build && gh-pages -d dist"
+}
+```
+
+  **3.** Run the deployment :
+  ```bash
+npm run deploy
+```
+
+  **4.** Go to your repository settings, navigate to **Settigns > Pages**, and enable Github Pages.
+
+---
+
+## ✏️ Author
+- Ryan CHIKHI (Zeikrom)
+
+---
+
+If you found this project helpful or inspiring, leave a ⭐ on the repository ! 😊
