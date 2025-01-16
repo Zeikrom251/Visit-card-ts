@@ -1,6 +1,6 @@
 import React from "react";
 import "./ProfilePhoto.style.css";
-import Photo from "../assets/profil.jpg";
+import Photo from "../../public/profilPicture.jpg";
 
 const ProfilePhoto: React.FC = () => {
   return (
